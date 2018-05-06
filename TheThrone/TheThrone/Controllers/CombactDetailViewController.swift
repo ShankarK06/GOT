@@ -29,7 +29,7 @@ class CombactDetailViewController: UIViewController {
         self.keysArray = Array(detailDictionary.keys)
         self.valuesArray = Array(detailDictionary.values)
         combatTabelView.register(UINib.init(nibName: Constants.TableViewCellIdentifiers.combactCellIdentifier, bundle: nil), forCellReuseIdentifier: Constants.CustomCellIdentifiers.CombactCell)
-
+        combatTabelView.tableFooterView = UIView.init(frame: CGRect.zero)
     }
 
 }
