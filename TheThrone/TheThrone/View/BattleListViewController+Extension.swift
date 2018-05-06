@@ -19,8 +19,6 @@ extension BattleListViewController {
             self.battleListTableView.isHidden = false
         }
     }
-    
-    
 }
 
 extension BattleListViewController: UITableViewDelegate{
