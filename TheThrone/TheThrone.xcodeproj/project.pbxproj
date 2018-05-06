@@ -10,8 +10,6 @@
 		C06AA5D1209EC19D00C310EB /* Combact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D0209EC19D00C310EB /* Combact.swift */; };
 		C06AA5D3209EC80A00C310EB /* CombactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D2209EC80A00C310EB /* CombactDetailViewController.swift */; };
 		C06AA5D5209EE3A500C310EB /* BattleListViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */; };
-		C06EEB62209EFE0D0087CE0A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */; };
-		C06EEB63209EFE0D0087CE0A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */; };
 		C06EEB65209F08A00087CE0A /* CombactAnalyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */; };
 		C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB66209F09A60087CE0A /* ImageAssest.swift */; };
 		C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF71209E9AE800AA2251 /* Main.storyboard */; };
@@ -53,8 +51,6 @@
 		C06AA5D0209EC19D00C310EB /* Combact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combact.swift; sourceTree = "<group>"; };
 		C06AA5D2209EC80A00C310EB /* CombactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombactDetailViewController.swift; sourceTree = "<group>"; };
 		C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BattleListViewController+Extension.swift"; sourceTree = "<group>"; };
-		C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombactAnalyser.swift; sourceTree = "<group>"; };
 		C06EEB66209F09A60087CE0A /* ImageAssest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssest.swift; sourceTree = "<group>"; };
 		C0A7FF6A209E9AE800AA2251 /* TheThrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheThrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,8 +193,6 @@
 			children = (
 				C0A7FFCD209E9CC300AA2251 /* BattleCardTableViewCell.swift */,
 				C0A7FFCE209E9CC300AA2251 /* BattleCardTableViewCell.xib */,
-				C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */,
-				C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -345,7 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A7FF78209E9AE800AA2251 /* LaunchScreen.storyboard in Resources */,
-				C06EEB63209EFE0D0087CE0A /* TableViewCell.xib in Resources */,
 				C0A7FFDE209E9CC400AA2251 /* BattleCardTableViewCell.xib in Resources */,
 				C0A7FF75209E9AE800AA2251 /* Assets.xcassets in Resources */,
 				C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */,
@@ -373,7 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06EEB62209EFE0D0087CE0A /* TableViewCell.swift in Sources */,
 				C0A7FFE1209E9CC400AA2251 /* NetworkModel.swift in Sources */,
 				C0A7FFDF209E9CC400AA2251 /* AppDelegate.swift in Sources */,
 				C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */,
