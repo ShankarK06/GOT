@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7BQ-gi-cK2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GameOfThrones-->
+        <scene sceneID="z39-Jl-zji">
+            <objects>
+                <viewController storyboardIdentifier="BattleListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lgx-mz-i4a" customClass="BattleListViewController" customModule="TheThrone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DyW-a6-E9n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-Uc-ogj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lgx-mz-i4a" id="KKt-OF-Qag"/>
+                                    <outlet property="delegate" destination="Lgx-mz-i4a" id="33b-jU-sBR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dIX-Uc-ogj" firstAttribute="top" secondItem="KQJ-x2-X2g" secondAttribute="top" id="7vN-I4-F9s"/>
+                            <constraint firstItem="dIX-Uc-ogj" firstAttribute="leading" secondItem="KQJ-x2-X2g" secondAttribute="leading" id="eBH-MQ-ghC"/>
+                            <constraint firstItem="dIX-Uc-ogj" firstAttribute="bottom" secondItem="KQJ-x2-X2g" secondAttribute="bottom" id="fXn-vX-Hjo"/>
+                            <constraint firstItem="dIX-Uc-ogj" firstAttribute="trailing" secondItem="KQJ-x2-X2g" secondAttribute="trailing" id="tPP-1x-UYa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KQJ-x2-X2g"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GameOfThrones" id="8RX-XU-Gpz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6G-qt-tXE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="150"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k4O-X2-gLP">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="toW-d1-EG2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vmQ-ul-TZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Byf-OI-gCS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="mx4-86-CQZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tqz-K5-YsI">
+                                            <rect key="frame" x="127" y="58" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="10m-al-4g3"/>
+                                                <constraint firstAttribute="height" constant="120" id="1dn-Kx-6mL"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="tqz-K5-YsI" secondAttribute="bottom" constant="8" id="ava-E3-B1N"/>
+                                        <constraint firstItem="tqz-K5-YsI" firstAttribute="centerX" secondItem="mx4-86-CQZ" secondAttribute="centerX" id="p9G-uy-FBI"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="toW-d1-EG2" id="pO3-RS-qJp"/>
+                                    <outlet property="delegate" destination="toW-d1-EG2" id="fbT-K9-HIo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Byf-OI-gCS" firstAttribute="bottom" secondItem="B8i-1y-DGf" secondAttribute="bottom" id="And-Bl-UyZ"/>
+                            <constraint firstItem="Byf-OI-gCS" firstAttribute="leading" secondItem="B8i-1y-DGf" secondAttribute="leading" id="K9Q-kc-D4u"/>
+                            <constraint firstItem="Byf-OI-gCS" firstAttribute="top" secondItem="B8i-1y-DGf" secondAttribute="top" id="NPZ-Ot-pVX"/>
+                            <constraint firstItem="Byf-OI-gCS" firstAttribute="trailing" secondItem="B8i-1y-DGf" secondAttribute="trailing" id="hm8-RT-Kn8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B8i-1y-DGf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxN-IV-D8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="150"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fZ7-Ii-tV5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7BQ-gi-cK2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="xc1-P3-1fl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96470588239999999" green="0.62745098040000002" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lgx-mz-i4a" kind="relationship" relationship="rootViewController" id="CjQ-Gk-uFV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGh-wS-SHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="150"/>
+        </scene>
+    </scenes>
+</document>
