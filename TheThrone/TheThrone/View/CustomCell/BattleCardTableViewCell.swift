@@ -10,6 +10,12 @@ import UIKit
 
 class BattleCardTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var totalAttack: UILabel!
+    @IBOutlet weak var totalDefence: UILabel!
+    @IBOutlet weak var totalWins: UILabel!
+    @IBOutlet weak var totalScore: UILabel!
+    @IBOutlet weak var kingName: UILabel!
+    @IBOutlet weak var kingsFlagAvatar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

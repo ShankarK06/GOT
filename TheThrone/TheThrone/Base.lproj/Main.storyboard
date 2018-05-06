@@ -37,15 +37,18 @@
                         <viewLayoutGuide key="safeArea" id="KQJ-x2-X2g"/>
                     </view>
                     <navigationItem key="navigationItem" title="GameOfThrones" id="8RX-XU-Gpz"/>
+                    <connections>
+                        <outlet property="battleListTableView" destination="dIX-Uc-ogj" id="P7W-4N-RtX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6G-qt-tXE" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="831" y="150"/>
         </scene>
-        <!--View Controller-->
+        <!--Combact Detail View Controller-->
         <scene sceneID="k4O-X2-gLP">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="toW-d1-EG2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="toW-d1-EG2" customClass="CombactDetailViewController" customModule="TheThrone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmQ-ul-TZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +89,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B8i-1y-DGf"/>
                     </view>
+                    <connections>
+                        <outlet property="combatTabelView" destination="Byf-OI-gCS" id="IOV-ED-B4v"/>
+                        <outlet property="kingAvatar" destination="tqz-K5-YsI" id="Sw3-ee-hRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxN-IV-D8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

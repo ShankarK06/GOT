@@ -20,6 +20,10 @@ struct Constants {
         static let BattleViewController = "BattleListViewController"
     }
     
+    struct TableViewCellIdentifiers {
+        static let battleCellIdentifier = "BattleCardTableViewCell"
+    }
+    
     struct CustomCellIdentifiers {
         static let battleCard = "battleCardCell"
     }

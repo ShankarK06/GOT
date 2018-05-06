@@ -7,19 +7,11 @@
 //
 
 import Foundation
-protocol ThroneBuilderProtocol {
-//    func buildProductScreen() -> ProductsListViewController
-}
-
-protocol BattleScreenViewProtocol: class {
-//    func getProducts(products: [ProductSectionItems])
-}
 
 protocol BattleListInteractorProtocol: class {
-    func fetchProducts()
+    func fetchBattle()
 }
-
 protocol BattleScreenPresenterProtocol: class {
-    func fetchProducts()
+    func fetchBattles()
 //    func getProducts(products: [ProductSectionItems])
 }

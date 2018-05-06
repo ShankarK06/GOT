@@ -7,20 +7,13 @@
 //
 
 import Foundation
+
 final class BattleScreenPresenter: BattleScreenPresenterProtocol{
     var interactor: BattleListInteractorProtocol?
-    weak var productsListView: BattleScreenViewProtocol?
+    weak var productsListView: BattleListInteractorProtocol?
     
     func fetchProducts() {
-        interactor?.fetchProducts()
+        interactor?.fetchBattle()
     }
     
-//    func getProducts(products: [ProductSectionItems]) {
-//        productsListView?.getProducts(products: products)
-//    }
-    
-    init(view: BattleScreenViewProtocol?) {
-        productsListView = view
-    }
-
 }
