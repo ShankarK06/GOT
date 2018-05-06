@@ -16,6 +16,7 @@ extension BattleListViewController {
             self.CombactList = battle
             self.battleListTableView.tableFooterView = UIView.init()
             self.battleListTableView.reloadData()
+            self.battleListTableView.isHidden = false
         }
     }
     
