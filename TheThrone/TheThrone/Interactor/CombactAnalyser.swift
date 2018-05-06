@@ -8,11 +8,13 @@
 
 import Foundation
 import UIKit
+
 struct CombactAnalyser {
     
     static func calculateCombact(_ battle: [Battle] , _ completion: @escaping (_ battle: [Combact]) -> () )  {
         var combacts : [Combact]? = []
         let KConstant : Float = 32.0
+        
         for battleItem in battle {
             
             let attackerKing = battleItem.attackerKing
@@ -103,6 +105,7 @@ struct CombactAnalyser {
 
             combactKing1.battleScore = String.init(format: "%.2f", comKing1Score)
             combactKing2.battleScore = String.init(format: "%.2f", comKing2Score)
+            
             if combactKing1.wars! != []
             {
                 var wars = combactKing1.wars

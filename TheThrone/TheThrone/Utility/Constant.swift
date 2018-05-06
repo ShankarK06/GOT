@@ -22,10 +22,14 @@ struct Constants {
     
     struct TableViewCellIdentifiers {
         static let battleCellIdentifier = "BattleCardTableViewCell"
+        static let combactCellIdentifier = "DetailTableViewCell"
+
     }
     
     struct CustomCellIdentifiers {
         static let battleCard = "battleCardCell"
+        static let CombactCell = "CombactCell"
+
     }
 
     struct ImageAssest {

@@ -12,6 +12,9 @@
 		C06AA5D5209EE3A500C310EB /* BattleListViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */; };
 		C06EEB65209F08A00087CE0A /* CombactAnalyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */; };
 		C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB66209F09A60087CE0A /* ImageAssest.swift */; };
+		C06EEB69209F48A70087CE0A /* CombactDetailViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB68209F48A70087CE0A /* CombactDetailViewController+Extension.swift */; };
+		C06EEB6C209F4C4A0087CE0A /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB6A209F4C4A0087CE0A /* DetailTableViewCell.swift */; };
+		C06EEB6D209F4C4A0087CE0A /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06EEB6B209F4C4A0087CE0A /* DetailTableViewCell.xib */; };
 		C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF71209E9AE800AA2251 /* Main.storyboard */; };
 		C0A7FF75209E9AE800AA2251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF74209E9AE800AA2251 /* Assets.xcassets */; };
 		C0A7FF78209E9AE800AA2251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF76209E9AE800AA2251 /* LaunchScreen.storyboard */; };
@@ -53,6 +56,9 @@
 		C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BattleListViewController+Extension.swift"; sourceTree = "<group>"; };
 		C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombactAnalyser.swift; sourceTree = "<group>"; };
 		C06EEB66209F09A60087CE0A /* ImageAssest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssest.swift; sourceTree = "<group>"; };
+		C06EEB68209F48A70087CE0A /* CombactDetailViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CombactDetailViewController+Extension.swift"; sourceTree = "<group>"; };
+		C06EEB6A209F4C4A0087CE0A /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		C06EEB6B209F4C4A0087CE0A /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		C0A7FF6A209E9AE800AA2251 /* TheThrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheThrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A7FF72209E9AE800AA2251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A7FF74209E9AE800AA2251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 			children = (
 				C0A7FFCC209E9CC300AA2251 /* CustomCell */,
 				C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */,
+				C06EEB68209F48A70087CE0A /* CombactDetailViewController+Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 			children = (
 				C0A7FFCD209E9CC300AA2251 /* BattleCardTableViewCell.swift */,
 				C0A7FFCE209E9CC300AA2251 /* BattleCardTableViewCell.xib */,
+				C06EEB6A209F4C4A0087CE0A /* DetailTableViewCell.swift */,
+				C06EEB6B209F4C4A0087CE0A /* DetailTableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A7FF78209E9AE800AA2251 /* LaunchScreen.storyboard in Resources */,
+				C06EEB6D209F4C4A0087CE0A /* DetailTableViewCell.xib in Resources */,
 				C0A7FFDE209E9CC400AA2251 /* BattleCardTableViewCell.xib in Resources */,
 				C0A7FF75209E9AE800AA2251 /* Assets.xcassets in Resources */,
 				C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */,
@@ -367,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A7FFE1209E9CC400AA2251 /* NetworkModel.swift in Sources */,
+				C06EEB6C209F4C4A0087CE0A /* DetailTableViewCell.swift in Sources */,
 				C0A7FFDF209E9CC400AA2251 /* AppDelegate.swift in Sources */,
 				C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */,
 				C0A7FFE3209E9CC400AA2251 /* ThroneInteractor.swift in Sources */,
@@ -375,6 +386,7 @@
 				C06AA5D1209EC19D00C310EB /* Combact.swift in Sources */,
 				C06EEB65209F08A00087CE0A /* CombactAnalyser.swift in Sources */,
 				C0A7FFD9209E9CC400AA2251 /* BattleList.swift in Sources */,
+				C06EEB69209F48A70087CE0A /* CombactDetailViewController+Extension.swift in Sources */,
 				C0A7FFDA209E9CC400AA2251 /* Constant.swift in Sources */,
 				C0A7FFE2209E9CC400AA2251 /* BattleListViewController.swift in Sources */,
 				C06AA5D5209EE3A500C310EB /* BattleListViewController+Extension.swift in Sources */,

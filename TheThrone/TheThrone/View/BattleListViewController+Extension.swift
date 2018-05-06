@@ -43,5 +43,12 @@ extension BattleListViewController: UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.ViewControllerIdentifiers.battleDetailViewController) as! CombactDetailViewController
+        detailsVC.combact = CombactList?[indexPath.row]
+        detailsVC.kingFlag = ImageAssetForKing.Image(name: (CombactList?[indexPath.row].kingsName!)!)
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    
 }
 
