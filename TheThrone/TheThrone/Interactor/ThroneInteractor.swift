@@ -7,11 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
-final class BattleInteractor : BattleListInteractorProtocol {
-    weak var productsPresenter: BattleScreenPresenterProtocol?
+struct BattleInteractor {
     
-    func fetchBattle() {
+    static func fetchBattle(_ completion: @escaping (_ battle: [Combact]) -> () ) {
         
         let request = NetworkModel.sharedInstance.getRequest(method: "GET", requestDict: nil, params: Constants.BaseURL.baseURL)
         
@@ -19,17 +19,39 @@ final class BattleInteractor : BattleListInteractorProtocol {
             
             if error == nil
             {
-                do {
-                    let resultJson = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:AnyObject]
-                    //                jsonObject(with: data, options: []) as? [String:AnyObject]
-                    print("Result",resultJson!)
+                let dataX: Data = data!
+
+                if let jsonDataArray = try? JSONSerialization.jsonObject(with: dataX, options: []) as? [[String: Any]] {
+                    var battle : [Battle]? = []
+                    for battleX in jsonDataArray! {
+                        let battleItem = Battle.init(dictionary: battleX)
+                        battle?.append(battleItem)
+                    }
                     
-                }catch{
-                    print("error in parsing")
+                    
+                    CombactAnalyser.calculateCombact(battle!, { (combact) in
+                        completion(combact)
+                    })
+//                    completion()
+                    print(battle)
                 }
+                
+                
+//                do {
+//                    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]
+//                    print("Result",json ?? [])
+//                    var battle : [Battle]? = []
+//                    for (battleX) in json {
+//                    }
+//
+//                }catch{
+//                    print("error in parsing")
+//                }
                 //                let Data =
                 
             }
         }
-    }}
+    }
+    
+}
 

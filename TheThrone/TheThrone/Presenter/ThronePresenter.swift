@@ -9,11 +9,16 @@
 import Foundation
 
 final class BattleScreenPresenter: BattleScreenPresenterProtocol{
-    var interactor: BattleListInteractorProtocol?
-    weak var productsListView: BattleListInteractorProtocol?
     
-    func fetchProducts() {
-        interactor?.fetchBattle()
+    var interactor: BattleListInteractorProtocol?
+    weak var BattleListView: BattleListInteractorProtocol?
+    
+//    init(view: BattleListInteractorProtocol) {
+//        BattleListView?.fetchBattle()
+//    }
+    func fetchBattles() {
+        BattleListView?.fetchBattle()
     }
+    
     
 }

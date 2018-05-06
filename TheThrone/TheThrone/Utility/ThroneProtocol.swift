@@ -8,6 +8,9 @@
 
 import Foundation
 
+protocol BattleScreenViewProtocol : class {
+    func getUpdatedData(battle: [Battle])
+}
 protocol BattleListInteractorProtocol: class {
     func fetchBattle()
 }
@@ -15,3 +18,4 @@ protocol BattleScreenPresenterProtocol: class {
     func fetchBattles()
 //    func getProducts(products: [ProductSectionItems])
 }
+

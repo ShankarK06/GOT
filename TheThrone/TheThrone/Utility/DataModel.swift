@@ -10,4 +10,10 @@ import UIKit
 
 class DataModel: NSObject {
 
+    static let sharedInstance = DataModel()
+    
+    // set and get Combat model
+    var Combat : [Combact]? = []
+    
+    
 }

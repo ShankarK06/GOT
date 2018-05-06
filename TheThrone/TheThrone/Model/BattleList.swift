@@ -36,7 +36,7 @@ class Battle : NSObject {
     var region : String? = ""
     var note : String? = ""
 
-    init(_ dictionary : [String : Any] ) {
+    init(dictionary : [String: Any]) {
         
         if let temp = dictionary["name"] as? String
         {

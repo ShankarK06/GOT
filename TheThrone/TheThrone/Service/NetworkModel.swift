@@ -45,16 +45,12 @@ class NetworkModel: NSObject {
     
      func getRequest(method : String, requestDict : [String : Any]?, params : String) -> URLRequest {
         
-        let originalString = params
-        let urlString = originalString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-        let url = URL(string: urlString!)
+//        let originalString = params
+//        let urlString = originalString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+        let url = URL(string: params)
         var request = URLRequest(url: url!)
         request.httpMethod = method
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        if method == "POST" {
-            let requestBody = try! JSONSerialization.data(withJSONObject: requestDict!, options: [])
-            request.httpBody = requestBody
-        }
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         return request
     }
 
@@ -64,10 +60,8 @@ class NetworkModel: NSObject {
         let reachability = Reachability()!
         if reachability.isReachable {
             let config = URLSessionConfiguration.default
-            config.timeoutIntervalForRequest = TimeInterval(30)
-            config.timeoutIntervalForResource = TimeInterval(30)
-            let urlSession = URLSession(configuration: config)
-            urlSession.dataTask(with: request) { (data, response, error) in
+            let session = URLSession(configuration: config)
+            session.dataTask(with: request) { (data, response, error) in
                 if let httpResponse = response as? HTTPURLResponse {
                     if httpResponse.statusCode == 420 {
                         return

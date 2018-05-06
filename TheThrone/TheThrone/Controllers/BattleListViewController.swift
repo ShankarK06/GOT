@@ -9,35 +9,24 @@
 import UIKit
 
 class BattleListViewController: UIViewController {
-    var presenter: BattleScreenPresenterProtocol?
-
-    @IBOutlet weak var battleListTableView: UITableView!
     
+    @IBOutlet weak var battleListTableView: UITableView!
+    var battleList: [Battle]? = []
+    var CombactList: [Combact]? = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         battleListTableView.register(UINib.init(nibName: Constants.TableViewCellIdentifiers.battleCellIdentifier, bundle: nil), forCellReuseIdentifier: Constants.CustomCellIdentifiers.battleCard)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        presenter?.fetchBattles()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        BattleInteractor.fetchBattle { (battleData) in
+            self.getUpdatedBattle(battle : battleData)
+        }
     }
     
 }
 
-extension BattleListViewController: UITableViewDelegate{
-    
-}
-
-extension BattleListViewController: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CustomCellIdentifiers.battleCard, for: indexPath)
-        
-        return cell
-    }
-    
-}
 

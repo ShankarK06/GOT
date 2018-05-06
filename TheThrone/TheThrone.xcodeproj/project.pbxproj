@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C06AA5D1209EC19D00C310EB /* Combact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D0209EC19D00C310EB /* Combact.swift */; };
 		C06AA5D3209EC80A00C310EB /* CombactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D2209EC80A00C310EB /* CombactDetailViewController.swift */; };
+		C06AA5D5209EE3A500C310EB /* BattleListViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */; };
+		C06EEB62209EFE0D0087CE0A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */; };
+		C06EEB63209EFE0D0087CE0A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */; };
+		C06EEB65209F08A00087CE0A /* CombactAnalyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */; };
+		C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EEB66209F09A60087CE0A /* ImageAssest.swift */; };
 		C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF71209E9AE800AA2251 /* Main.storyboard */; };
 		C0A7FF75209E9AE800AA2251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF74209E9AE800AA2251 /* Assets.xcassets */; };
 		C0A7FF78209E9AE800AA2251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FF76209E9AE800AA2251 /* LaunchScreen.storyboard */; };
@@ -21,7 +26,6 @@
 		C0A7FFDD209E9CC400AA2251 /* BattleCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFCD209E9CC300AA2251 /* BattleCardTableViewCell.swift */; };
 		C0A7FFDE209E9CC400AA2251 /* BattleCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A7FFCE209E9CC300AA2251 /* BattleCardTableViewCell.xib */; };
 		C0A7FFDF209E9CC400AA2251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFD0209E9CC300AA2251 /* AppDelegate.swift */; };
-		C0A7FFE0209E9CC400AA2251 /* ThronePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFD2209E9CC300AA2251 /* ThronePresenter.swift */; };
 		C0A7FFE1209E9CC400AA2251 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFD4209E9CC400AA2251 /* NetworkModel.swift */; };
 		C0A7FFE2209E9CC400AA2251 /* BattleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFD6209E9CC400AA2251 /* BattleListViewController.swift */; };
 		C0A7FFE3209E9CC400AA2251 /* ThroneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7FFD8209E9CC400AA2251 /* ThroneInteractor.swift */; };
@@ -48,6 +52,11 @@
 /* Begin PBXFileReference section */
 		C06AA5D0209EC19D00C310EB /* Combact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combact.swift; sourceTree = "<group>"; };
 		C06AA5D2209EC80A00C310EB /* CombactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombactDetailViewController.swift; sourceTree = "<group>"; };
+		C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BattleListViewController+Extension.swift"; sourceTree = "<group>"; };
+		C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombactAnalyser.swift; sourceTree = "<group>"; };
+		C06EEB66209F09A60087CE0A /* ImageAssest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssest.swift; sourceTree = "<group>"; };
 		C0A7FF6A209E9AE800AA2251 /* TheThrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheThrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A7FF72209E9AE800AA2251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A7FF74209E9AE800AA2251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +75,6 @@
 		C0A7FFCD209E9CC300AA2251 /* BattleCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleCardTableViewCell.swift; sourceTree = "<group>"; };
 		C0A7FFCE209E9CC300AA2251 /* BattleCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BattleCardTableViewCell.xib; sourceTree = "<group>"; };
 		C0A7FFD0209E9CC300AA2251 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0A7FFD2209E9CC300AA2251 /* ThronePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThronePresenter.swift; sourceTree = "<group>"; };
 		C0A7FFD4209E9CC400AA2251 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		C0A7FFD6209E9CC400AA2251 /* BattleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleListViewController.swift; sourceTree = "<group>"; };
 		C0A7FFD8209E9CC400AA2251 /* ThroneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThroneInteractor.swift; sourceTree = "<group>"; };
@@ -125,7 +133,6 @@
 				C0A7FFD5209E9CC400AA2251 /* Controllers */,
 				C0A7FFD7209E9CC400AA2251 /* Interactor */,
 				C0A7FFC5209E9CC300AA2251 /* Model */,
-				C0A7FFD1209E9CC300AA2251 /* Presenter */,
 				C0A7FFD3209E9CC400AA2251 /* Service */,
 				C0A7FFC7209E9CC300AA2251 /* Utility */,
 				C0A7FFCB209E9CC300AA2251 /* View */,
@@ -167,9 +174,10 @@
 		C0A7FFC7209E9CC300AA2251 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				C0A7FFCA209E9CC300AA2251 /* Reachability.swift */,
 				C0A7FFC8209E9CC300AA2251 /* Constant.swift */,
 				C0A7FFC9209E9CC300AA2251 /* DataModel.swift */,
-				C0A7FFCA209E9CC300AA2251 /* Reachability.swift */,
+				C06EEB66209F09A60087CE0A /* ImageAssest.swift */,
 				C0A7FFE4209EA29500AA2251 /* ThroneProtocol.swift */,
 			);
 			path = Utility;
@@ -179,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A7FFCC209E9CC300AA2251 /* CustomCell */,
+				C06AA5D4209EE3A500C310EB /* BattleListViewController+Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +197,8 @@
 			children = (
 				C0A7FFCD209E9CC300AA2251 /* BattleCardTableViewCell.swift */,
 				C0A7FFCE209E9CC300AA2251 /* BattleCardTableViewCell.xib */,
+				C06EEB60209EFE0D0087CE0A /* TableViewCell.swift */,
+				C06EEB61209EFE0D0087CE0A /* TableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -198,14 +209,6 @@
 				C0A7FFD0209E9CC300AA2251 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		C0A7FFD1209E9CC300AA2251 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				C0A7FFD2209E9CC300AA2251 /* ThronePresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C0A7FFD3209E9CC400AA2251 /* Service */ = {
@@ -229,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A7FFD8209E9CC400AA2251 /* ThroneInteractor.swift */,
+				C06EEB64209F08A00087CE0A /* CombactAnalyser.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A7FF78209E9AE800AA2251 /* LaunchScreen.storyboard in Resources */,
+				C06EEB63209EFE0D0087CE0A /* TableViewCell.xib in Resources */,
 				C0A7FFDE209E9CC400AA2251 /* BattleCardTableViewCell.xib in Resources */,
 				C0A7FF75209E9AE800AA2251 /* Assets.xcassets in Resources */,
 				C0A7FF73209E9AE800AA2251 /* Main.storyboard in Resources */,
@@ -368,16 +373,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06EEB62209EFE0D0087CE0A /* TableViewCell.swift in Sources */,
 				C0A7FFE1209E9CC400AA2251 /* NetworkModel.swift in Sources */,
 				C0A7FFDF209E9CC400AA2251 /* AppDelegate.swift in Sources */,
+				C06EEB67209F09A60087CE0A /* ImageAssest.swift in Sources */,
 				C0A7FFE3209E9CC400AA2251 /* ThroneInteractor.swift in Sources */,
 				C0A7FFE5209EA29500AA2251 /* ThroneProtocol.swift in Sources */,
 				C0A7FFDD209E9CC400AA2251 /* BattleCardTableViewCell.swift in Sources */,
 				C06AA5D1209EC19D00C310EB /* Combact.swift in Sources */,
-				C0A7FFE0209E9CC400AA2251 /* ThronePresenter.swift in Sources */,
+				C06EEB65209F08A00087CE0A /* CombactAnalyser.swift in Sources */,
 				C0A7FFD9209E9CC400AA2251 /* BattleList.swift in Sources */,
 				C0A7FFDA209E9CC400AA2251 /* Constant.swift in Sources */,
 				C0A7FFE2209E9CC400AA2251 /* BattleListViewController.swift in Sources */,
+				C06AA5D5209EE3A500C310EB /* BattleListViewController+Extension.swift in Sources */,
 				C06AA5D3209EC80A00C310EB /* CombactDetailViewController.swift in Sources */,
 				C0A7FFDC209E9CC400AA2251 /* Reachability.swift in Sources */,
 				C0A7FFDB209E9CC400AA2251 /* DataModel.swift in Sources */,
